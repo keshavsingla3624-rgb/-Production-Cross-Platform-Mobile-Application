@@ -39,8 +39,7 @@ jobs:
       - name: Upload build
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist/student-manager/browser
-
+          path: ./www
   deploy:
     environment:
       name: github-pages
