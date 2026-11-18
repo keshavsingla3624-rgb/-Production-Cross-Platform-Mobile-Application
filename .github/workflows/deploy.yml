@@ -36,6 +36,9 @@ jobs:
       - name: Build Ionic App
         run: npm run build -- --base-href "/-Production-Cross-Platform-Mobile-Application/"
 
+      - name: Fix Angular routing for GitHub Pages
+        run: cp www/index.html www/404.html
+
       - name: Upload build
         uses: actions/upload-pages-artifact@v3
         with:
